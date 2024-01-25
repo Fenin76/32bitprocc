@@ -4,10 +4,6 @@
 
 typedef ap_axiu<32,1,1,1> AXI_DATA;
 
-
-
-
-
 struct out{
 	int32_t a;
 	bool z,o,c;

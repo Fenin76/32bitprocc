@@ -20,6 +20,7 @@ out ALU(int32_t A, int32_t B, uint8_t CTRL){
 
 
 	bool zero, overflow, carryout = 0;
+//port for zero bool carry not defined
 	carryout = (static_cast<uint32_t>(A) + static_cast<uint32_t>(B)) > UINT32_MAX;
 	overflow = (A > 0 && B > 0 && INT32_MAX - A < B) || (A < 0 && B < 0 && INT32_MIN - A > B);
 
